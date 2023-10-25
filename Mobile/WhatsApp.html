@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="whatsapp.png">
+    <title>WhatsApp Web</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            /* padding: 0; */
+            background-color: #f0f0f0;
+            height: 1200px;
+        }
+
+        .header {
+            background-color: rgb(40, 131, 40);
+            height: 230px;
+            display: flex;
+            /* position: fixed; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contents {
+            background-color: white;
+            position: relative;
+            border-radius: 4px;
+            box-shadow: 16px 16px 16px rgb(161, 161, 161);
+            height: 950px;
+            width: 900px;
+            /* padding: 20px; */
+            /* text-align: center; */
+            margin-top: 990px;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 480px;
+            margin-top: 20px;
+            margin-left: 40px;
+            position: absolute;
+        }
+
+        hr {
+            width: 74%;
+            margin-top: 360px;
+            margin-left: 20px;
+            position: absolute;
+            border: none;
+            border: 1px solid #e8e0e0;
+        }
+
+        .WhatsappScanQR {
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 560px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table tr td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table tr td i {
+            color: #000000;
+        }
+        .a1 {
+            position: absolute;
+            text-decoration: none;
+            color: rgb(68, 148, 68);
+            margin-top: 390px;
+            margin-left: 73px;
+        }
+
+        .footer {
+            width: 900px;
+            height: 450px;
+            margin-left: 0px;
+            background-color: #f0ecec;
+            margin-top: 500px;
+            border-radius: 2px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Tutorial {
+            position: absolute;
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 82, 82);
+            margin-left: 400px;
+            /* text-align: center; */
+        }
+
+        .help {
+            position: absolute;
+            text-decoration: none;
+            color: rgb(68, 148, 68);
+            margin-top: 64px;
+            margin-left: 360px;
+            /* text-align: center; */
+        }
+
+        video {
+            position: absolute;
+            margin-top: 110px;
+            margin-left: 190px;
+            /* width: 550px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contents">
+            <div class="box">
+                <table cellspacing="25px">
+                    <tr>
+                        <td>Use WhatsApp on your computer</td>
+                    </tr>
+                    <tr>
+                        <td>1. Open WhatsApp on your phone</td>
+                    </tr>
+                    <tr>
+                        <td>2. Tap <strong>Menu</strong> <i class="fa-solid fa-ellipsis-vertical"></i> or <strong>Settings</strong> and select <strong>Linked Devices</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3. Tap on <strong>Link a device</strong></td>
+                    </tr>
+                    <tr>
+                        <td>4. Point your phone to this screen to capture the QR code</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="WhatsappScanQR">
+                <img src="./Images/WhatsappScanQR.png" alt="" width="280px" height="280px">
+            </div>
+            <hr>
+            <a class="a1" href="">Link with phone number</a>
+            <div class="footer">
+                <h1 class="Tutorial">Tutorial</h1>
+                <a class="help" href="">Need help to get started?</a>
+                <video src="Whatsapp Webclient Login.mp4" controls width="530px">
+                </video>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

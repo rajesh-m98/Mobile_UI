@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+    <style>
+        body {
+            /* margin: 0; */
+            /* padding: 0; */
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 474px;
+        }
+
+        .phone {
+            display: block;
+            position: absolute;
+            width: 240px;
+            height: 460px;
+            background-color: #ffffff;
+            background-image: url(wallpaper.jpeg);
+            border-radius: 20px;
+            /* overflow: hidden; */
+            /* position: relative; */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 0px;
+        }
+
+        .screen {
+            width: 100%;
+            height: 80%;
+            background-image: url(wallpaper.jpeg);
+        }
+
+        .speaker {
+            width: 50px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 10px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .button {
+            width: 38px;
+            height: 38px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .fronticons {
+            margin-top: 250px;
+        }
+
+        .images {
+            border-radius: 50%;
+
+        }
+
+        .googlebar {
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+            width: 208px;
+            height: 40px;
+            margin-top: 205px;
+            margin-left: 15px;
+            position: absolute;
+        }
+
+        .googlebar .googleimagebar {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-left: 7px;
+            margin-top: 7px;
+        }
+
+        .googlebar .speak {
+            width: 28px;
+            height: 24px;
+            border-radius: 50%;
+            margin-left: 102px;
+            margin-top: 7px;
+        }
+
+        .googlebar .googlesearch {
+            width: 32px;
+            height: 24px;
+            border-radius: 50%;
+            margin-left: 1px;
+            margin-top: 7px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .footericons {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <img src="" alt="">
+        <div class="speaker"></div>
+        <div class="googlebar">
+            <a href="https://www.google.com">
+                <img class="googleimagebar" src="./Images/googleimages.png" alt="">
+            </a>
+            <a href="">
+                <img class="speak" src="./Images/google-voice.png" alt="">
+            </a>
+            <a href="">
+                <img class="googlesearch" src="./Images/google_lens.webp" alt="">
+            </a>
+        </div>
+        <!-- <div class="screen"></div> -->
+        <div></div>
+        <table cellspacing="16px" class="fronticons" style="cursor: pointer;">
+            <tr>
+                <td>
+                    <div class="button">
+                        <a href="https://www.google.com">
+                            <img class="images"  src="./Images/googleimages1.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="file:///C:/Users/Default/Pictures/Acer/">
+                            <img class="images" src="./Images/gallery-icon-png-circle.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="Gmaillogin.html">
+                            <img class="images" src="./Images/gmail.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="file:///D:/">
+                            <img class="images" src="./Images/filemanager.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button">
+                        <a href="#">
+                            <img class="images" src="./Images/settings.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="WhatsApp.html">
+                            <img class="images" src="./Images/whatsapp.jpg" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="#">
+                            <img class="images" src="./Images/chrome.jpg" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="#">
+                            <img class="images" src="./Images/playstore.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table cellspacing="16px" class="footericons">
+            <tr>
+                <td>
+                    <div class="button">
+                        <a href="#" onclick="makeCall()">
+                            <img class="images" src="./Images/call.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="#">
+                            <img class="images" src="./Images/newcontact.png" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="#">
+                            <img class="images" src="./Images/message.jpg" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="button">
+                        <a href="Camera.html" onclick="startCamera()" target="_self">
+                            <img  class="images" src="./Images/camera.jpg" alt="" width="38px" height="38px">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function startCamera() {
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    var video = document.createElement('video');
+                    document.body.appendChild(video);
+                    video.srcObject = stream;
+                    video.play();
+                })
+                .catch(function (error) {
+                    console.error('Error accessing the camera:', error);
+                });
+            } else {
+                alert('This browser does not support camera access.');
+            }
+        }
+
+        function makeCall() {
+            var callUrl = "tel:+916381005442";
+            window.open(callUrl);
+        }
+
+    </script>
+</body>
+</html>
